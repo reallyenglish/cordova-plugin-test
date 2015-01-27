@@ -17,14 +17,6 @@ module.exports = [
         "id": "org.apache.cordova.test-framework.main"
     },
     {
-        "file": "plugins/com.reallyenglish.cordova.plugin.browser-media-recorder/www/lib/media-recorder.js",
-        "id": "com.reallyenglish.cordova.plugin.browser-media-recorder.MediaRecorder",
-        "clobbers": [
-            ""
-        ],
-        "runs": true
-    },
-    {
         "file": "plugins/com.reallyenglish.cordova.plugin.browser-media-recorder/www/BrowserMediaRecorder.js",
         "id": "com.reallyenglish.cordova.plugin.browser-media-recorder.BrowserMediaRecorder",
         "clobbers": [
@@ -34,6 +26,11 @@ module.exports = [
     {
         "file": "plugins/com.reallyenglish.cordova.plugin.browser-media-recorder/src/browser/MediaRecorderProxy.js",
         "id": "com.reallyenglish.cordova.plugin.browser-media-recorder.MediaRecorderProxy",
+        "runs": true
+    },
+    {
+        "file": "plugins/com.reallyenglish.cordova.plugin.browser-media-recorder/src/browser/media-recorder.js",
+        "id": "com.reallyenglish.cordova.plugin.browser-media-recorder.MediaRecorder",
         "runs": true
     }
 ];
