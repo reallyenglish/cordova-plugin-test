@@ -20,7 +20,7 @@ module.exports = [
         "file": "plugins/com.reallyenglish.cordova.plugin.browser-media-recorder/www/lib/media-recorder.js",
         "id": "com.reallyenglish.cordova.plugin.browser-media-recorder.MediaRecorder",
         "clobbers": [
-            "window.com.reallyenglish.cordova.plugin.browsermediarecorder.lib.MediaRecorder"
+            ""
         ],
         "runs": true
     },

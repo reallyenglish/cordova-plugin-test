@@ -7,7 +7,7 @@
   <!-- Plugin source code: Core -->
 
   <js-module name="MediaRecorder" src="www/lib/media-recorder.js">
-    <clobbers target="window.com.reallyenglish.cordova.plugin.browsermediarecorder.lib.MediaRecorder" />
+    <clobbers target="" />
     <runs/>
   </js-module>
 
