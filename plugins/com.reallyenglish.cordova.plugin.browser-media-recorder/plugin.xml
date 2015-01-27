@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="com.reallyenglish.cordova.plugin.browser-media-recorder" version="0.0.1" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+  <name>BrowserRecorder</name>
+
+  <asset src="www/lib/recorder.swf" target="scripts/recorder.swf" />
+
+  <!-- Plugin source code: Core -->
+
+  <js-module name="MediaRecorder" src="www/lib/media-recorder.js">
+    <clobbers target="window.com.reallyenglish.cordova.plugin.browsermediarecorder.lib.MediaRecorder" />
+    <runs/>
+  </js-module>
+
+  <js-module name="BrowserMediaRecorder" src="www/BrowserMediaRecorder.js">
+    <clobbers target="window.Recorder" />
+  </js-module>
+
+  <!-- browser -->
+  <platform name="browser">
+    <config-file target="config.xml" parent="/*">
+      <feature name="MediaRecorder">
+        <param name="browser-package" value="MediaRecorder" />
+      </feature>
+    </config-file>
+
+    <js-module src="src/browser/MediaRecorderProxy.js" name="MediaRecorderProxy">
+      <runs />
+    </js-module>
+  </platform>
+</plugin>
