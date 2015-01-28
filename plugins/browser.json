@@ -9,6 +9,10 @@
                 "parents": {
                     "/*": [
                         {
+                            "xml": "<feature name=\"Media\"><param name=\"browser-package\" value=\"Media\" /></feature>",
+                            "count": 1
+                        },
+                        {
                             "xml": "<feature name=\"MediaRecorder\"><param name=\"browser-package\" value=\"MediaRecorder\" /></feature>",
                             "count": 1
                         }
@@ -21,9 +25,19 @@
         "org.apache.cordova.test-framework": {
             "PACKAGE_NAME": "io.cordova.hellocordova"
         },
+        "com.reallyenglish.cordova.plugin.browser-media": {
+            "PACKAGE_NAME": "io.cordova.hellocordova"
+        },
         "com.reallyenglish.cordova.plugin.browser-media-recorder": {
             "PACKAGE_NAME": "io.cordova.hellocordova"
         }
     },
-    "dependent_plugins": {}
+    "dependent_plugins": {
+        "org.apache.cordova.file": {
+            "PACKAGE_NAME": "io.cordova.hellocordova"
+        },
+        "org.apache.cordova.media": {
+            "PACKAGE_NAME": "io.cordova.hellocordova"
+        }
+    }
 }

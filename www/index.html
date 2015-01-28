@@ -60,11 +60,11 @@
     button.disabled = true;
     button.previousElementSibling.disabled = false;
     __log('Stopped recording.');
-    recorder.playRecord();
+    recorder.play();
   }
 
   window.onload = function init() {
-    recorder = new window.Recorder();
+    recorder = new window.Media();
     __log('Recorder initialised.');
   };
   </script>
